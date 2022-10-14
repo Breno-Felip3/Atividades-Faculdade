@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #f7f7ff;
+    color: white;
+    padding: 18px;
+    border-bottom: 1px solid black;
+}
+
+.barra_navegacao {
+    display: flex;
+    flex-direction: row;
+    margin-top: 18px;
+    margin-left: 22px;
+    align-items: center;
+}
+
+.row_notificacao {
+    display: flex;
+    flex-direction: row;
+    margin-top: 18px;
+    margin-left: 22px;
+    margin-right: 22px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.barra_navegacao-span {
+    padding-left: 8px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.row_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-flow: column wrap;
+}
+
+nav {
+    color: rgb(92, 112, 112);
+}
+
+aside {
+    background-color: white;
+}
+
+main {
+    background-color: white;
+}
+
+aside, main {
+    padding: 32px;
+    height: 270px;
+}
+
+footer {
+    background-color: #092538;
+    color: white;
+    padding: 22px;
+}
+
+code {
+    font-size: 18pt;
+}
+
+.barra_navegacao li {
+    padding: 10px;
+    text-align: justify;
+}
+
+.barra_navegacao span {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    border-radius: 32px;
+    text-decoration: none;
+    padding: 8px;
+    border: 1px solid white;
+}
+
+.barra_navegacao span:hover {
+    background-color: white;
+    border-radius: 28px;
+    border: 1px solid rgba(2, 55, 255, 0.1);
+}
+
+@media all and (min-width: 768px) {
+    
+    .column-nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .row_header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-flow: row wrap;
+        align-items: center;
+    }
+
+    .row_notificacao {
+        display: flex;
+        flex-direction: row;
+        margin-left: 18px;
+        margin-right: 20px;
+        margin-top: 0;
+        justify-content: center;
+    }
+
+    .barra_navegacao-span {
+        padding-left: 12px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .row_senha {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #container {
+        display: flex;
+    }
+
+    .aside-div-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .vl {
+        border-left: 1px solid whitesmoke;
+        height: 268px;
+        left: 50%;
+        margin-left: -6px;
+        top: 0;
+    }
+
+    main {
+        flex: 70%;
+    }
+
+    aside {
+        flex: 40%;
+        height: 576px;
+    }
+}

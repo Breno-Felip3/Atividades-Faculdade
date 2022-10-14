@@ -1,0 +1,140 @@
+*{
+    margin:0 ;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+
+aside{
+    padding-left: 200px;
+    background-color: #ffffff;
+}
+
+
+.aside-column{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+.botao_esqueceu_senha{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.botao_esqueceu_senha p{
+    color: #046586;
+}
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+  
+}
+
+.formulario_email{
+   height: 50px;
+   width: 400px;
+   color: #8E919D;
+   border-radius: 5px;
+   padding-left: 20px;
+   border: 1px solid #8E919D;
+}
+
+.botao_next i{
+    padding-left: 15px;
+}
+
+
+.botao_next{
+    background-color: #046586;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 5px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+hr.solid {
+    border-top: 1px solid #8E919D;
+}
+
+h5{
+    color: #8E919D;
+}
+
+.center-text{
+    display: flex;
+    text-align: center;
+    justify-content: center;  
+}
+
+.redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+}
+.redes button{
+    background-color: #ffffff;
+    color: #4a4a4a;
+    font-weight: bold;
+    border-radius: 5px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border: 1px solid #8E919D;
+}
+
+.botao_redes i{
+  margin-right: 10px;
+}
+
+i#facebook{
+    color: #1877f2;
+}
+.final{
+    color: black;
+}
+
+.final u{
+    color: #046586;
+}
+
+.imagem div{
+    padding-top: 11px;
+    position: absolute; 
+    left: 100%; 
+    margin-left: -120px; 
+    top: 20%; 
+    border-radius: 30px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    margin-top: -99px; 
+    background-color: #e1f1f2; 
+    color: black;
+}
+
+
+@media all and (min-width:768px){
+
+
+
+#container{
+    display: flex;
+}
+
+main{
+    flex: 40%;
+}
+aside{
+    flex: 65%;
+}
+
+}
