@@ -1,0 +1,147 @@
+h1 {
+    color: #1f2041;
+    margin-bottom: 32px;
+    padding-bottom: 28px;
+    padding-left: 22px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+}
+
+h2 {
+    color: #1f2041;
+    margin-top: 58px;
+    margin-bottom: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+}
+
+h3 {
+    counter-reset: #1f2041;
+    margin-bottom: 28px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+}
+
+.row-div-delete u {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #f1638b;
+}
+
+.row_email {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+
+.row_email h4 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.row_header-pass {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 34px;
+}
+
+u {
+    color: #2b29c7;
+    font-weight: bold;
+}
+
+.row_senha {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.senha {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 28px;
+}
+
+.senha input {
+    height: 54px;
+    width: 224px;
+    border-radius: 8px;
+    border: 1px solid #dedefa;
+    padding: 18px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.senha span {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 8px;
+}
+
+.img-profile {
+    width: 40px;
+    border-radius: 80%;
+    margin-left: 22px;
+}
+
+.botao {
+    margin-left: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 15px;
+    background:  #26263E;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.btn-save-pass {
+    margin-top: 26px;
+    height: 48px;
+    width: 146px;
+    margin-bottom: 28px;
+    background: #26263E;
+    color: white;
+    border-radius: 12px;
+    font-weight: bold;
+}
+
+.botao i {
+    padding-right: 10px;
+}
+
+aside-div {
+    display: flex;
+    flex-direction: column;
+}
+
+aside-div-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.vl {
+    border-top: 1px solid #f4f4ff;
+    height: 248px;
+    left: 50%;
+    margin-left: -6px;
+    top: 0;
+}
+
+.main-div-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-div-container span {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.column-nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.divisao{
+    border-top: #f4f4ff;
+}

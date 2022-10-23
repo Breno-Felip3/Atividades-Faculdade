@@ -1,0 +1,133 @@
+*{
+    margin:0 ;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #eceff8;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.texto_interno{
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    margin-left: 20px;
+    margin-right: 10px;
+
+}
+
+.cartao{
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    justify-content: space-between;
+}
+
+.interno{
+    background-color: #eceff8;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 5px;
+}
+
+.botao_add_calendario{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao_add_calendario button{
+    width:120px;
+    background-color: #ffffff;
+    padding: 6px;
+    margin-right:20px;
+    border-radius: 6px;
+    border: solid 1px #ffffff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.botao_add_calendario button:hover{
+    color: white;
+    background-color: black;
+    border: solid 1px black;
+}
+
+
+@media all and (min-width:768px){
+
+    #container{
+        display: flex;
+        flex-direction: column;
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+
+    .cartao{
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        justify-content: space-between;
+    }
+
+    .texto_interno{
+        display: flex;
+        flex-direction: column;
+        padding-top: 25px;
+    }
+
+    .interno{
+        background-color: #eceff8;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        margin: 15px;
+        border-radius: 5px;
+    }
+    
+    .botao_add_calendario{
+        display: flex;
+        flex-direction: column;
+        margin-left: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .botao_add_calendario button{
+        width:120px;
+        background-color: #ffffff;
+        padding: 6px;
+        margin-right:20px;
+        border-radius: 6px;
+        border: solid 1px white;
+    }
+    
+    .botao_add_calendario button:hover{
+        color: white;
+        background-color: black;
+        border: solid 1px black;
+    }
+
+#container{
+    display: flex;
+}
+
+
+
+}

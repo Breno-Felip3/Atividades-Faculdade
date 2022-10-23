@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width = device-width,initial-scale=1.0" />
+    <title>Página de Cobrança</title>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <div id="container">
+      <aside>
+        <div class="container">
+          <div class="row-profile">
+            <div class="img-profile">
+              <img src="imagens/profile.jpg" alt="" />
+            </div>
+            <div class="desc-profile">
+              <span><b>IIdiko Gaspar</b></span>
+              <p>@igaspar</p>
+            </div>
+          </div>
+          <div style="margin-bottom: 50px"></div>
+          <div class="column-nav">
+            <div class="item-nav">
+              <div class="vl"></div>
+              <i class="fa-solid fa-border-all fa-lg"></i>
+              <p>General</p>
+            </div>
+            <div class="item-nav">
+              <div class="vl"></div>
+              <i class="fa-solid fa-lock fa-lg"></i>
+              <p>Password</p>
+            </div>
+            <div class="item-nav">
+              <div class="vl"></div>
+              <i class="fa-regular fa-envelope fa-lg"></i>
+              <p>Invitations</p>
+            </div>
+            <div class="item-nav">
+              <div class="vl"></div>
+              <i class="fa-solid fa-money-bill fa-lg"></i>
+              <p>Billing</p>
+            </div>
+            <div class="item-nav">
+              <div class="vl"></div>
+              <i class="fa-brands fa-app-store-ios fa-lg"></i>
+              <p>Apps</p>
+            </div>
+          </div>
+          <div style="margin-bottom: 200px"></div>
+          <div class="item-nav">
+            <i class="fa-solid fa-right-from-bracket fa-lg"></i>
+            <p>Log out</p>
+          </div>
+        </div>
+      </aside>
+      <main>
+        <div class="container-billing">
+          <div class="container-billing-primary">
+            <h1>Billing</h1>
+            <div style="margin-bottom: 50px"></div>
+            <h4>Order history</h4>
+            <span>Manage billing information and view receips</span>
+            <div style="margin-bottom: 30px"></div>
+            <table class="tabela">
+              <tr>
+                <th align="left">Date</th>
+                <th align="left">Type</th>
+                <th align="left">Receipt</th>
+              </tr>
+              <tr class="tabela-data">
+                <td>Oct.21,2021</td>
+                <td>Pro Portifolio</td>
+                <td><button class="botao_dowload">Download</button></td>
+              </tr>
+              <tr class="tabela-data">
+                <td>Aug.21,2021</td>
+                <td>Sponsored Post</td>
+                <td><button class="botao_dowload">Download</button></td>
+              </tr>
+              <tr class="tabela-data">
+                <td>July.21,2021</td>
+                <td>Sponsored Post</td>
+                <td><button class="botao_dowload">Download</button></td>
+              </tr>
+              <tr class="tabela-data">
+                <td>Juny.21,2021</td>
+                <td>Sponsored Post</td>
+                <td><button class="botao_dowload">Download</button></td>
+              </tr>
+            </table>
+            <div style="margin-bottom: 30px"></div>
+            <u>Load more</u>
+            <div style="margin-bottom: 50px"></div>
+            <div>
+              <h4>Payment Method</h4>
+              <span>Manage billing information and view receips</span>
+              <div style="margin-bottom: 20px"></div>
+              <div class="container-billing-payment-row">
+                <div class="cobranca_cartao">
+                  <img src="imagens/" alt="" />
+                  <div style="margin-left: 20px"></div>
+                  <span><b>Visa ending in 2255</b></span>
+                </div>
+                <div class="botao_cartao">
+                  <button>
+                    Remove
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container-billing-secundary">
+            <div style="margin-bottom: 100px"></div>
+            <div class="card-plan">
+              <p style="padding-top: 20px">Your plan</p>
+              <div style="margin-bottom: 20px"></div>
+              <h3>Pro Annual</h3>
+              <div style="margin-bottom: 10px"></div>
+              <p>Renews on Nov.2021</p>
+              <div style="margin-bottom: 10px"></div>
+              <button style="margin-bottom: 20px" class="botao_plano_cartao">
+                Cancel subscription
+              </button>
+            </div>
+            <div style="margin-bottom: 100px"></div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
