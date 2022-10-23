@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercícios 11</title>
+        <script>
+           const url = "https://jsonplaceholder.typicode.com/posts";
+
+           function imprimir(obj){
+            let mensagem = '';
+            for(let value of obj){
+                console.log(value);
+                mensagem += `
+                <div>
+                <h4>Postagem ${value.id}</h4>    
+                User ID: ${value.userId} <br>
+                Title: ${value.title} <br>
+                Body: ${value.body}
+                </div>
+                `;
+            }
+            return mensagem;
+           }
+
+            async function getPostagem(){
+                const response = await fetch (url);
+                const data = await response.json()
+                console.log(data);
+                todas.innerHTML = imprimir(data);
+            }
+
+            async function postPostagem(titulo, mensagem){
+                const response = await fetch (url, {
+                    method: "POST",
+                    headers: {
+                        'Content-type': 'application/json; charset=UTF-8',
+                    },
+                    body: JSON.stringify({
+                        title: titulo,
+                        body: mensagem,
+                        userId: 1,
+                    }),
+                })
+                const data = await response.json()
+                console.log(data);
+                alert('Postagem realizada com sucesso!');
+            }
+
+            async function putPostagem(id, titulo, mensagem){
+                const response = await fetch (`${url}/${id}`, {
+                    method: "PUT",
+                    headers: {
+                        'Content-type': 'application/json; charset=UTF-8',
+                    },
+                    body: JSON.stringify({
+                        id: id,
+                        title: titulo,
+                        body: mensagem,
+                        userId: 1,
+                    }),
+                })
+                const data = await response.json()
+                console.log(data);
+                alert("Postagem atualizada com sucesso");
+            }
+
+            async function patchPostagem(id, titulo){
+                const response = await fetch (`${url}/${id}`, {
+                    method: "PATCH",
+                    headers: {
+                        'Content-type': 'application/json; charset=UTF-8',
+                    },
+                    body: JSON.stringify({
+                        title: titulo,
+                    }),
+                })
+                const data = await response.json()
+                console.log(data);
+                alert("Postagem atualizada com sucesso");
+            }
+
+            async function deletePostagem(id){
+                const response = await fetch (`${url}/${id}`, {
+                    method: 'DELETE',
+                });
+                const data = await response.json();
+                console.log(data);
+                alert("Postagem excluida com sucesso");
+            }
+
+            async function filtrarPostagem(id){
+                const response = await fetch (`${url}/${id}`);
+                const data = await response.json()
+                console.log(data);
+                filtro.innerHTML = `
+                <div>
+                    <h4>Postagem ${data.id}</h4>    
+                    User ID: ${data.userId} <br>
+                    Title: ${data.title} <br>
+                    Body: ${data.body}
+                </div>
+                `;
+            }
+    </script>
+    </head>
+    <body>
+        <!-- Os IDs mudam em cada input/label para evitar conflito nos valores enviados -->
+        <h1>Postagens</h1>
+
+        <h2>Ler postagens</h2>
+        <button type="button" onclick="getPostagem()">
+            Buscar
+        </button>
+        <div id="todas"></div>
+
+        <h2>Criar Postagem</h2>
+        <label for="titulo">
+            <input type="text" id="titulo">
+        </label>
+        <label for="mensagem">
+            <input type="text" id="mensagem">
+        </label>
+        <button type="button" onclick="postPostagem(titulo.value, mensagem.value)">
+            Postar
+        </button>
+
+        <!-- Os IDs mudam em cada input/label para evitar conflito nos valores enviados -->
+        <h2>Atualizar</h2>
+        <label for="idAtualizar">
+            <input type="number" id="idAtualizar">
+        </label>
+        <label for="tituloAtualizar">
+            <input type="text" id="tituloAtualizar">
+        </label>
+        <label for="mensagemAtualizar">
+            <input type="text" id="mensagemAtualizar">
+        </label>
+        <button type="button" onclick="putPostagem(idAtualizar.value, tituloAtualizar.value, mensagemAtualizar.value)">
+            Atualizar
+        </button>
+
+        <!-- Os IDs mudam em cada input/label para evitar conflito nos valores enviados -->
+        <h2>Modificar</h2>
+        <label for="idModificar">
+            <input type="number" id="idModificar">
+        </label>
+        <label for="tituloModificar">
+            <input type="text" id="tituloModificar">
+        </label>
+        <button type="button" onclick="patchPostagem(idModificar.value, tituloModificar.value,)">
+            Modificar
+        </button>
+
+        <!-- Os IDs mudam em cada input/label para evitar conflito nos valores enviados -->
+        <h2>Remover</h2>
+        <label for="idRemover">
+            <input type="number" id="idRemover">
+        </label>
+        <button type="button" onclick="deletePostagem(idRemover.value)">Remover</button>
+
+        <!-- Os IDs mudam em cada input/label para evitar conflito nos valores enviados -->
+        <h2>Filtrar Postagens</h2>
+        <label for="idFiltro">
+            <input type="number" id="idFiltro">
+        </label>
+        <button type="button" onclick="filtrarPostagem(idFiltro.value)">Filtrar</button>
+        <div id="filtro"></div>
+
+    </body>
+</html>
